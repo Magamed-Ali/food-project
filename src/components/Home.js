@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react';
 import {getAllCategories} from '../api';
+import Preloader from "./Preloader";
+import {CategoryList} from "./CategoryList";
 
 function Home(props) {
 
@@ -9,10 +11,15 @@ function Home(props) {
         getAllCategories().then((data => {
             setCatalog(data.categories)
         }))
-    })
+    }, [])
+
 
     return (
-        <div>sfjfgjsj</div>
+        <div>{
+            catalog.length ?
+            <CategoryList catalog={catalog}/>
+             : <Preloader/>
+        }</div>
     );
 }
 

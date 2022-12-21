@@ -5,7 +5,7 @@ import {Box, LinearProgress} from "@mui/material";
 function Preloader(props) {
     return (
         <div>
-            <Box sx={{width: '100%'}}>
+            <Box sx={{width: '100%'}} >
                 <LinearProgress />
             </Box>
         </div>
