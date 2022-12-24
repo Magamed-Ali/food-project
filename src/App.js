@@ -14,9 +14,9 @@ function App() {
         <main className="container content ">
             <Routes>
                 <Route path="/" element={<Main/> }/>
-                <Route path="/node1" element={<About/> }/>
-                <Route path="/node2" element={<Contact/> }/>
-                <Route path="/node3" element={<Home/> }/>
+                <Route path="/about" element={<About/> }/>
+                <Route path="/contacts" element={<Contact/> }/>
+                <Route path="/category/:name" element={<Home/> }/>
             </Routes>
         </main>
       <Footer/>
