@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
+import {Category} from "./Layout/Category";
 
 function App() {
   return (
@@ -13,10 +14,13 @@ function App() {
      <Header/>
         <main className="container content ">
             <Routes>
+                <Route path="/" element={<Home/> }/>
+
                 <Route path="/" element={<Main/> }/>
                 <Route path="/about" element={<About/> }/>
                 <Route path="/contacts" element={<Contact/> }/>
-                <Route path="/category/:name" element={<Home/> }/>
+                <Route path="/category/:name" element={<Category/> }/>
+
             </Routes>
         </main>
       <Footer/>
