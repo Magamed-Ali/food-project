@@ -9,15 +9,16 @@ function Category() {
     const {name} = useParams();
     const [meals, setMeals] = useState([]);
 
+
     useEffect(()=> {
         getFilteredCategory(name).then((data) => setMeals(data.meals))
     }, [name]);
 
-    return <>
+    return <div>
         {
             !meals.length ? <Preloader/> : <MealList meals={meals}/>
         }
-    </>
+    </div>
 }
 
 export {Category}
