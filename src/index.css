@@ -29,8 +29,17 @@ code {
 .card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .card-content{
   flex-grow: 1;
+}
+
+.card-image img{
+  transition: 1s;
+}
+
+.card-image img:hover {
+  transform: scale(1.1);
 }
