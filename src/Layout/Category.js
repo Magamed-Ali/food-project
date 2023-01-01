@@ -9,14 +9,18 @@ function Category() {
     const {name} = useParams();
     const [meals, setMeals] = useState([]);
 
-    const {goBack} = useNavigate();
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate("/");
+    }
 
     useEffect(()=> {
         getFilteredCategory(name).then((data) => setMeals(data.meals))
     }, [name]);
 
     return <div>
-        <button className='btn' onClick={goBack}> Go Back </button>
+        <button className='btn' onClick={handleClick}> Go Back </button>
         {
             !meals.length ? <Preloader/> : <MealList meals={meals}/>
         }
