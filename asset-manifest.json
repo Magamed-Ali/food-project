@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Magamed-Ali/food-project/static/css/main.dd0955a7.css",
+    "main.js": "/Magamed-Ali/food-project/static/js/main.fcdc3237.js",
+    "index.html": "/Magamed-Ali/food-project/index.html",
+    "main.dd0955a7.css.map": "/Magamed-Ali/food-project/static/css/main.dd0955a7.css.map",
+    "main.fcdc3237.js.map": "/Magamed-Ali/food-project/static/js/main.fcdc3237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd0955a7.css",
+    "static/js/main.fcdc3237.js"
+  ]
+}
