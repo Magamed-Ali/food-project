@@ -7,9 +7,24 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import {Category} from "./Layout/Category";
-import {Recipe}from "./components/Recipe.jsx"
+import Recipe from "./components/Recipe";
+
 
 function App() {
+
+    function powersOfTwo(n){
+
+        let arr = [];
+        for (let i = 0; i < n; i++){
+            console.log(i)
+            arr.push(n / i)
+        }
+        console.log("asdf",arr)
+        return arr
+    }
+
+    console.log(powersOfTwo(4))
+
   return (
     <div className="App">
      <Header/>

@@ -1,7 +1,7 @@
 import { API_URL } from './config';
 
 const getMealById = async (mealID) => {
-   const response = await fetch(API_URL + 'looku.php?i=' + mealID);
+   const response = await fetch(API_URL + 'lookup.php?i=' + mealID);
    return await response.json();
 }
 

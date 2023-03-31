@@ -43,3 +43,17 @@ code {
 .card-image img:hover {
   transform: scale(1.1);
 }
+
+.recipe img, iframe {
+  max-width: 100%;
+}
+
+iframe{
+  width: 600px;
+  height: 350px;
+  margin: 10px auto;
+}
+
+.recipeBtn{
+  margin-bottom: 10px;
+}
